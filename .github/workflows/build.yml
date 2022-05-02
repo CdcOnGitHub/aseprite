@@ -50,8 +50,6 @@ jobs:
           export XVFB=xvfb-run
         fi
         cd build && $XVFB ctest --output-on-failure
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v3.0.0
 
     - name: Running CLI Tests
       shell: bash
