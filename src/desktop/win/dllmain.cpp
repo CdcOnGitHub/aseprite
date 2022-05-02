@@ -56,7 +56,7 @@ STDAPI_(BOOL) DllMain(HINSTANCE hInstance, DWORD dwReason, void*)
     Global::hInstance = hInstance;
     DisableThreadLibraryCalls(hInstance);
   }
-  return FALSE;
+  return TRUE;
 }
 
 STDAPI DllCanUnloadNow()
