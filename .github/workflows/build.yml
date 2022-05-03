@@ -54,17 +54,17 @@ jobs:
       uses: actions/upload-artifact@v3.0.0
       with:
        name: aseprite_windows
-       path: /d/a/aseprite/aseprite/build/bin/
+       path: ${{github.workspace}}/build/bin/
     - name: Upload a Build Artifact Mac
       uses: actions/upload-artifact@v3.0.0
       with:
        name: aseprite_mac
-       path: /Users/runner/work/aseprite/aseprite/build/bin/
+       path: ${{github.workspace}}/build/bin/
     - name: Upload a Build Artifact Ubuntu
       uses: actions/upload-artifact@v3.0.0
       with:
        name: aseprite_ubuntu
-       path: /home/runner/work/aseprite/aseprite/build/bin//
+       path: ${{github.workspace}}/build/bin/
 
     - name: Running CLI Tests
       shell: bash
