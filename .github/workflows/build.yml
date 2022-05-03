@@ -9,10 +9,6 @@ jobs:
         os: [windows-latest]
         build_type: [debug]
         enable_ui: [off]
-        include:
-          - os: ubuntu-latest
-            build_type: debug
-            enable_ui: on
     steps:
     - uses: actions/checkout@v2
       with:
@@ -54,7 +50,8 @@ jobs:
       uses: actions/upload-artifact@v3.0.0
       with:
        name: aseprite_windows
-       path: ${{github.workspace}}/build/bin/
+       path: aseprite/aieh/wrq/were/
+        
 
     - name: Running CLI Tests
       shell: bash
