@@ -54,7 +54,7 @@ jobs:
       uses: actions/upload-artifact@v3.0.0
       with:
        name: aseprite
-       path: /home/runner/work/aseprite/aseprite/build/bin/
+       path: /a/aseprite/aseprite/build/bin/aseprite
 
     - name: Running CLI Tests
       shell: bash
