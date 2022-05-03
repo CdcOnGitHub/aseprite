@@ -53,8 +53,8 @@ jobs:
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.0.0
       with:
-       name: aseprite
-       path: D:/a/aseprite/aseprite/build/bin/aseprite
+       name: aseprite_windows
+       path: /d/a/aseprite/aseprite/build/bin/aseprite
 
     - name: Running CLI Tests
       shell: bash
